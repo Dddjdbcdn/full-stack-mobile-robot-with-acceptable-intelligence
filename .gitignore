@@ -1,0 +1,54 @@
+# Pushed codes:
+
+# BIG_BRAIN/src
+# MICRO_ROS2/Core/Src
+# MICRO_ROS2/Core/Inc
+# MICRO_ROS2/RTOS_PROJECT.ioc 
+# MICRO_ROS2/Makefile 
+
+# Modified libraries :
+
+# BIG_BRAIN/src/ros2_astra_camera/astra_camera/launch/astra.launch.xml (tf_publish=false and pub_rate)
+# BIG_BRAIN/src/topic_based_ros2_control/src/topic_based_system.cpp (QoS to best effort)
+# MICRO_ROS2/micro_ros_stm32cubemx_utils/microros_static_library/library_generation/colcon.meta (max service, client and history)
+
+# --- ROS 2 Big Brain Workspace ---
+BIG_BRAIN/build/
+BIG_BRAIN/install/
+BIG_BRAIN/log/
+
+# Ignore third-party packages in Big Brain
+BIG_BRAIN/src/micro_ros_setup/
+BIG_BRAIN/src/ros2_astra_camera/ 
+BIG_BRAIN/src/topic_based_ros2_control/
+BIG_BRAIN/src/sllidar_ros2/
+BIG_BRAIN/src/uros/
+
+# Build and Log folders
+MICRO_ROS2/build/
+MICRO_ROS2/install/
+MICRO_ROS2/log/
+
+# IDE specific
+MICRO_ROS2/.settings/
+MICRO_ROS2/.vscode/
+MICRO_ROS2/.project
+MICRO_ROS2/.cproject
+MICRO_ROS2/.mxproject
+MICRO_ROS2/.stm32env
+MICRO_ROS2/Drivers
+MICRO_ROS2/Middlewares
+MICRO_ROS2/*.ld
+MICRO_ROS2/*.s
+MICRO_ROS2/*.ld
+MICRO_ROS2/*.cfg
+MICRO_ROS2/Core/Startup
+MICRO_ROS2/micro_ros_stm32cubemx_utils/
+
+# --- IDEs and Editor Junk ---
+.claude/
+.settings/
+.cursor/
+.vscode/
+.DS_Store
+*.swp
